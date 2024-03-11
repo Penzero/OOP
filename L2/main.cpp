@@ -65,7 +65,7 @@ std::string break_caesar_cipher(const std::string& encrypted_text, const float d
         std::string decrypted;
         for (char ch : encrypted_text) {
             if (std::isalpha(ch)) {
-                char decrypted_ch = std::tolower(ch); // Ensure ch is lowercase before the transformation
+                char decrypted_ch = std::tolower(ch);
                 int decrypted_index = (decrypted_ch - 'a' - shift + 26) % 26;
                 decrypted_ch = 'a' + decrypted_index;
                 decrypted.push_back(decrypted_ch);
@@ -109,7 +109,6 @@ int main() {
     float distribution[26];
     read_distribution(distribution);
 
-    // Modified part to input encrypted text from keyboard
     std::string encrypted_text;
     std::cout << "Enter the encrypted text: ";
     std::cin.ignore(); // Ignores the newline left in the input buffer
