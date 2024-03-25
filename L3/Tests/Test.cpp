@@ -1,5 +1,5 @@
 #include "Test.h"
-#include "../domain/Animal.h"
+#include "../Domain/Animal.h"
 #include <iostream>
 #include <cassert>
 
